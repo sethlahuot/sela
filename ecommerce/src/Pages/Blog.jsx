@@ -5,6 +5,7 @@ import BlogDetails from '../Components/blog/BlogDetails'
 import Footer from '../Components/home/Footer'
 import Search from '../Components/home/Search'
 import Header from '../Components/home/Header'
+import withPreloader from '../Components/withPreloader'
 
 const Blog = () => {
   return (
@@ -19,4 +20,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default withPreloader(Blog)

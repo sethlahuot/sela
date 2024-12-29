@@ -5,7 +5,7 @@ import ContactMap from '../Components/contact/ContactMap'
 import ContactSection from '../Components/contact/ContactSection'
 import Footer from '../Components/home/Footer'
 import Search from '../Components/home/Search'
-
+import withPreloader from '../Components/withPreloader'
 const Contact = () => {
   return (
     <div>
@@ -19,4 +19,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default withPreloader(Contact)

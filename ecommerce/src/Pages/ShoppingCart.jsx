@@ -5,7 +5,7 @@ import ShoppingCartBreadcrumb from '../Components/shoppingCart/ShoppingCartBread
 import ShoppingCartSection from '../Components/shoppingCart/ShoppingCartSection';
 import Footer from '../Components/home/Footer'
 import Search from '../Components/home/Search'
-
+import withPreloader from '../Components/withPreloader'
 const ShoppingCart = () => {
   return (
     <div>
@@ -19,4 +19,4 @@ const ShoppingCart = () => {
   )
 }
 
-export default ShoppingCart
+export default withPreloader(ShoppingCart)

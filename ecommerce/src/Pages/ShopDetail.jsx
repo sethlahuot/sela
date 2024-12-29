@@ -5,7 +5,7 @@ import ShopDetailRelated from '../Components/shopDetail/ShopDetailRelated'
 import ShopDetailSection from '../Components/shopDetail/ShopDetailSection'
 import Footer from '../Components/home/Footer'
 import Search from '../Components/home/Search'
-
+import withPreloader from '../Components/withPreloader'
 const ShopDetail = () => {
   return (
     <div>
@@ -19,4 +19,4 @@ const ShopDetail = () => {
   )
 }
 
-export default ShopDetail
+export default withPreloader(ShopDetail)

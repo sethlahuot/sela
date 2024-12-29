@@ -7,7 +7,7 @@ import Product from '../Components/home/Product'
 import Footer from '../Components/home/Footer'
 import Search from '../Components/home/Search'
 import Categories from '../Components/home/Categories'
-
+import withPreloader from '../Components/withPreloader'
 
 const Home = () => {
   return (
@@ -25,4 +25,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default withPreloader(Home)

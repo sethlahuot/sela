@@ -8,12 +8,13 @@ import logo from '../img/logo.png';
 
 
 const Header = () => {
+    const location = useLocation();
     const {cart} = useCart();
     const totalProductCount = cart.reduce((total, product) => total + product.quantity, 0);
     const subtotal = cart.reduce((total, product) => total + product.price * product.quantity, 0);
     const currentPath = location.pathname;
     const navigate = useNavigate();
-    const location = useLocation();
+    
     const isKhmer = location.pathname.startsWith('/kh');
     const currentLanguage = location.pathname.split('/')[1] || 'en';
     

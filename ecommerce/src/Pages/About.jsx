@@ -9,7 +9,7 @@ import AboutUsClient from '../Components/about/AboutUsClient'
 import AboutUsTeam from '../Components/about/AboutUsTeam'
 import Footer from '../Components/home/Footer'
 import Search from '../Components/home/Search'
-
+import withPreloader from '../Components/withPreloader'
 const About = () => {
   return (
     <div>
@@ -29,4 +29,4 @@ const About = () => {
   )
 }
 
-export default About
+export default withPreloader(About)

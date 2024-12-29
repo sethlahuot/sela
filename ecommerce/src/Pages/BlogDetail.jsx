@@ -5,6 +5,8 @@ import BlogDetailHero from '../Components/blogDetail/BlogDetailHero'
 import BlogDetailSection from '../Components/blogDetail/BlogDetailSection'
 import Footer from '../Components/home/Footer'
 import Search from '../Components/home/Search'
+import withPreloader from '../Components/withPreloader'
+
 const BlogDetail = () => {
   return (
     <div>
@@ -18,4 +20,4 @@ const BlogDetail = () => {
   )
 }
 
-export default BlogDetail
+export default withPreloader(BlogDetail)

@@ -5,6 +5,7 @@ import CheckoutBreadcrumb from '../Components/checkout/CheckoutBreadcrumb'
 import CheckoutSection from '../Components/checkout/CheckoutSection'
 import Footer from '../Components/home/Footer'
 import Search from '../Components/home/Search'
+import withPreloader from '../Components/withPreloader'
 const Checkout = () => {
   return (
     <div>
@@ -18,4 +19,4 @@ const Checkout = () => {
   )
 }
 
-export default Checkout
+export default withPreloader(Checkout)
